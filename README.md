@@ -33,7 +33,7 @@ A pilha é uma estrutura de dados que segue o princípio **LIFO (Last-In, First-
 
 #### Por que usar uma Pilha aqui?
 
-Imagine que o almoxarife, Rogério, acabou de passar vários itens na esteira e quer verificar se o último item foi registrado corretamente[cite: 32, 82]. Em vez de procurar em um longo relatório cronológico, um sistema com uma pilha permite que ele acesse imediatamente a transação mais recente. É análogo a usar "Ctrl + Z" (Desfazer), que sempre desfaz a última ação.
+Imagine que o almoxarife, Rogério, acabou de passar vários itens na esteira e quer verificar se o último item foi registrado corretamente. Em vez de procurar em um longo relatório cronológico, um sistema com uma pilha permite que ele acesse imediatamente a transação mais recente. É análogo a usar "Ctrl + Z" (Desfazer), que sempre desfaz a última ação.
 
 #### Aplicação no Código
 
