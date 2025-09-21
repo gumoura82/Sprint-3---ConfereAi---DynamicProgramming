@@ -15,9 +15,9 @@ O terminal exibirá o passo a passo da simulação, demonstrando o funcionamento
 
 O script é dividido em cinco partes principais:
 
-1.  [cite_start]**Configuração Inicial**: Inicializa uma lista de dicionários chamada `inventario`, que simula o banco de dados de insumos do almoxarifado, com base nos dados do protótipo do projeto[cite: 98, 103].
+1.  **Configuração Inicial**: Inicializa uma lista de dicionários chamada `inventario`, que simula o banco de dados de insumos do almoxarifado, com base nos dados do protótipo do projeto.
 2.  **Fila e Pilha**: Implementa as estruturas para gerenciar o registro de consumo. A **Fila** (`deque`) garante a ordem cronológica (FIFO), essencial para relatórios históricos precisos. A **Pilha** (`list`) é usada para consultas de operações recentes (LIFO).
-3.  [cite_start]**Estruturas de Busca**: Contém as funções `busca_sequencial` e `busca_binaria` para localizar itens específicos, correspondendo ao caso de uso "Consultar Item"[cite: 61].
+3.  **Estruturas de Busca**: Contém as funções `busca_sequencial` e `busca_binaria` para localizar itens específicos, correspondendo ao caso de uso "Consultar Item".
 4.  **Ordenação (Quick Sort)**: Apresenta o algoritmo Quick Sort para organizar o inventário com base em diferentes critérios (como a quantidade em estoque).
 5.  **Simulação da Operação**: O bloco principal que executa as funções em uma sequência lógica para demonstrar todas as funcionalidades, desde o registro de consumo até a exibição de dados ordenados no dashboard.
 
@@ -33,7 +33,7 @@ A pilha é uma estrutura de dados que segue o princípio **LIFO (Last-In, First-
 
 #### Por que usar uma Pilha aqui?
 
-[cite_start]Imagine que o almoxarife, Rogério, acabou de passar vários itens na esteira e quer verificar se o último item foi registrado corretamente[cite: 32, 82]. Em vez de procurar em um longo relatório cronológico, um sistema com uma pilha permite que ele acesse imediatamente a transação mais recente. É análogo a usar "Ctrl + Z" (Desfazer), que sempre desfaz a última ação.
+Imagine que o almoxarife, Rogério, acabou de passar vários itens na esteira e quer verificar se o último item foi registrado corretamente[cite: 32, 82]. Em vez de procurar em um longo relatório cronológico, um sistema com uma pilha permite que ele acesse imediatamente a transação mais recente. É análogo a usar "Ctrl + Z" (Desfazer), que sempre desfaz a última ação.
 
 #### Aplicação no Código
 
@@ -64,11 +64,11 @@ A pilha é uma estrutura de dados que segue o princípio **LIFO (Last-In, First-
 
 ### Uso do Quick Sort: Ordenação do Inventário
 
-O Quick Sort é um algoritmo de ordenação eficiente que utiliza uma estratégia de "dividir para conquistar". [cite_start]Sua principal aplicação no projeto "ConfereAí" é organizar os dados do inventário para exibição no painel de controle do administrador, permitindo uma análise visual rápida e eficiente[cite: 25, 90].
+O Quick Sort é um algoritmo de ordenação eficiente que utiliza uma estratégia de "dividir para conquistar". Sua principal aplicação no projeto "ConfereAí" é organizar os dados do inventário para exibição no painel de controle do administrador, permitindo uma análise visual rápida e eficiente.
 
 #### Por que usar Quick Sort aqui?
 
-[cite_start]O dashboard do administrador precisa apresentar informações claras[cite: 67]. [cite_start]Um gestor pode querer ver os itens ordenados por quantidade para identificar rapidamente quais estão com estoque baixo e precisam de reposição[cite: 28, 96]. Uma lista de itens desordenada não oferece essa inteligência de forma ágil. [cite_start]O Quick Sort organiza essa lista de forma muito rápida, mesmo com um grande volume de itens, o que é esperado em hospitais de médio e grande porte[cite: 14].
+O dashboard do administrador precisa apresentar informações claras. Um gestor pode querer ver os itens ordenados por quantidade para identificar rapidamente quais estão com estoque baixo e precisam de reposição. Uma lista de itens desordenada não oferece essa inteligência de forma ágil. O Quick Sort organiza essa lista de forma muito rápida, mesmo com um grande volume de itens, o que é esperado em hospitais de médio e grande porte.
 
 #### Aplicação no Código
 
@@ -94,7 +94,7 @@ O Quick Sort é um algoritmo de ordenação eficiente que utiliza uma estratégi
     for item in inventario_ordenado_por_estoque:
         print(f" -> Item: {item['item']:<30} | Estoque Atual: {item['estoque_atual']}")
     ```
-    [cite_start]O resultado é uma lista de insumos exibida do mais crítico (menor estoque) ao mais abundante, atacando diretamente a dor do gestor de precisar de um controle ágil e preciso do inventário[cite: 30].
+    O resultado é uma lista de insumos exibida do mais crítico (menor estoque) ao mais abundante, atacando diretamente a dor do gestor de precisar de um controle ágil e preciso do inventário[cite: 30].
 
 ## NOMES E RMS
 
