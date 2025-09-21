@@ -95,3 +95,12 @@ O Quick Sort é um algoritmo de ordenação eficiente que utiliza uma estratégi
         print(f" -> Item: {item['item']:<30} | Estoque Atual: {item['estoque_atual']}")
     ```
     [cite_start]O resultado é uma lista de insumos exibida do mais crítico (menor estoque) ao mais abundante, atacando diretamente a dor do gestor de precisar de um controle ágil e preciso do inventário[cite: 30].
+
+
+
+Giovanne Charelli Zaniboni Silva | 556223
+Juan Francisco Alves Muradas | 555541
+Leonardo Pasquini Baldaia | 557416
+Gustavo Oliveira de Moura | 555827
+Lynn Bueno Rosa | 551102
+
