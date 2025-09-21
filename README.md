@@ -94,7 +94,7 @@ O dashboard do administrador precisa apresentar informações claras. Um gestor 
     for item in inventario_ordenado_por_estoque:
         print(f" -> Item: {item['item']:<30} | Estoque Atual: {item['estoque_atual']}")
     ```
-    O resultado é uma lista de insumos exibida do mais crítico (menor estoque) ao mais abundante, atacando diretamente a dor do gestor de precisar de um controle ágil e preciso do inventário[cite: 30].
+    O resultado é uma lista de insumos exibida do mais crítico (menor estoque) ao mais abundante, atacando diretamente a dor do gestor de precisar de um controle ágil e preciso do inventário.
 
 ## NOMES E RMS
 
